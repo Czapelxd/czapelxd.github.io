@@ -43,3 +43,15 @@ $("#draggable5").draggable({
         localStorage.positions = JSON.stringify(positions)
     }
 });
+
+$( ".el_reset" ).click(function() {
+    if (  $( this ).css( "transform" ) == 'none' ){
+        $(this).css("transform","rotate(360deg)");
+    } else {
+        $(this).css("transform","" );
+    }
+});
+
+function refreshPage(){
+    window.location.reload();
+}
